@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+			  
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
+
+	<style>
+
+	</style>
+	<body ng-app="myApp">
+		<nav>
+			<div class="nav-wrapper container">
+				<a href="#!/" class="brand-logo">Logo</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="#!/">Liste des Elèves</a></li>
+				<li><a href="#!/ajouter">Ajouter un élève</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container" >
+		
+			<ng-app="myApp"div ng-view></div>
+
+		</div>
+		<script src="app/myApp.js"></script>
+		<script src="app/service/eleveService.js"></script>
+		<script src="app/controller/liste.ctrl.js"></script>
+		<script src="app/controller/myCtrl.js"></script>
+		<script src="app/controller/profil.ctrl.js"></script>
+		<script src="app/directive/myDir.js"></script>
+	</body>
+</html>
